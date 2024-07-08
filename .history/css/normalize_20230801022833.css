@@ -1,0 +1,21 @@
+@charset "utf-8";
+
+/* 
+* *********************************
+*　ページ全体に関わるのCSS設定 
+* *********************************
+*/
+html *,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serf;
+}
+
+/* 標準的なリンクのテキストの色 */
+a {
+    color: #f30;
+}

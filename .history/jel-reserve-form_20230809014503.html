@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Salon Takahashi - reserve 予約 -</title>
+    <meta charset="utf-8">
+    <meta name="description" content="サロンタカハシのジェルメニュー予約受付フォーム">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Didact Gothic'>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- ヘッダー -->
+    <header>
+        <!-- サイトタイトル -->
+        <h1>salon takahashi</h1>
+
+        <!-- PC用ナビゲーション -->
+        <nav id="nav-pc">
+            <a href="/">home</a>
+            <a href="sell.html">sell</a>
+            <a href="staff.html">staff</a>
+            <a href="design.html">design</a>
+            <a href="reserve.html">reserve</a>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <!-- reserve-form -->
+            <section id="reserve-form">
+                <div class="section-title">
+                    <h2 class="index-h2">- reserve -</h2>
+                    <p>予約受付フォーム</p>
+                </div>
+                <form>
+                    <div>
+                        <div>
+                            <input type="hidden" name="menu" value="ジェルメニュー">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="form-heading">
+                            <label class="form-label" for="name">お名前<span class="form-span">必須</span></label>
+                        </div>
+                        <div>
+                            <input type="text" name="name" placeholder="高橋　友紀" class="form-textbox>">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="form-heading">
+                            <label class="form-label" for="hurigana">フリガナ<span class="form-span">必須</span></label>
+                        </div>
+                        <div>
+                            <input type="text" name="hurigana" placeholder="タカハシ　ユキ" class="form-textbox>">
+                        </div>
+                    </div>                   
+                    <div>
+                        <div class="form-heading">
+                            <label class="form-label" for="email">メールアドレス<span class="form-span">必須</span></label>
+                        </div>
+                        <div>
+                            <input type="email" name="email" placeholder="xxxxxx@salontakahashi.com" class="form-textbox>">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="form-heading">
+                            <label class="form-label" for="tel">電話番号<span class="form-span">必須</span></label>
+                        </div>
+                        <div>
+                            <input type="text" name="tel" placeholder="03-1234-5678" class="form-textbox>">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="form-heading">
+                            <label class="form-label" for="date">日付<span class="form-span">必須</span></label>
+                        </div>
+                        <div>
+                            <input type="date" name="date" min="2023/01/01" class="form-textbox>">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="form-heading">
+                            <label class="form-label" for="day">時間<span class="form-span">必須</span></label>
+                        </div>
+                        <div>
+                            <select>
+                                <option>10:00 - 11:00</option>
+                                <option>11:00 - 12:00</option>
+                                <option>12:00 - 13:00</option>
+                                <option>13:00 - 14:00</option>
+                                <option>14:00 - 15:00</option>
+                                <option>15:00 - 16:00</option>
+                                <option>16:00 - 17:00</option>
+                                <option>17:00 - 18:00</option>
+                                <option>18:00 - 19:00</option>
+                                <option>19:00 - 20:00</option>
+                            </select>                            
+                        </div>
+                    </div>
+                    <input type="submit" value="予約する">
+                </form>
+            </section>
+        </article>
+        <footer>
+            <p>salon takahashi</p>
+        </footer>
+    </main>
+</body>
+</html>

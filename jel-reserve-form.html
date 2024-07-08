@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+<head>
+    <title>Salon Takahashi - reserve 予約 -</title>
+    <meta charset="utf-8">
+    <meta name="description" content="サロンタカハシのジェルメニュー予約受付フォーム">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Didact Gothic'>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mailform.css" />
+    <!-- ご希望の日時選択ライブラリここから -->
+    <link rel="stylesheet" href="css/jquery.datetimepicker.css" />
+    <!-- ご希望の日時選択ライブラリここまで -->
+</head>
+<body>
+    <!-- ヘッダー -->
+    <header>
+        <!-- サイトタイトル -->
+        <h1>salon takahashi</h1>
+
+        <!-- PC用ナビゲーション -->
+        <nav id="nav-pc">
+            <a href="index.html">home</a>
+            <a href="sell.html">sell</a>
+            <a href="staff.html">staff</a>
+            <a href="design.html">design</a>
+            <a href="reserve.html">reserve</a>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <article>
+                <!-- reserve-form -->
+                <section id="reserve-form">
+                    <div class="section-title">
+                        <h2 class="index-h2">- reserve -</h2>
+                        <p>予約受付フォーム</p>
+                    </div>
+                    <form action="php/mailform.php" method="post" id="mail_form">
+        
+
+                            <dd><input type="hidden" name="menu" value="ジェルメニュー" /> </dd>
+
+                        
+                        <dl>
+                            <dt><i></i>名前</dt>
+                            <dd class="required"><input type="text" name="name_1" value="" /> <input type="text" name="name_2" value="" /></dd>
+                        </dl>
+                        
+                        <dl>
+                            <dt><i></i>ふりがな</dt>
+                            <dd><input type="text" name="read_1" value="" /> <input type="text" name="read_2" value="" /></dd>
+                        </dl>
+                        
+                        <dl>
+                            <dt><i></i>メールアドレス</dt>
+                            <dd class="required"><input type="email" name="mail_address" value="" /></dd>
+                        </dl>
+                        
+                        <dl>
+                            <dt><i></i>メールアドレス(確認用)</dt>
+                            <dd><input type="email" name="mail_address_confirm" value="" /></dd>
+                        </dl>
+                        
+                        <dl>
+                            <dt><i></i>電話番号</dt>
+                            <ddd class="required"><input type="tel" name="phone" value="" /></dd>
+                        </dl>
+                        
+                        <dl>
+                            <dt><i></i>ご希望の日時</dt>
+                            <dd class="required"><input type="text" name="schedule" value="" readonly="readonly" /></dd>
+                        </dl>
+                        
+                        <dl>
+                            <dt><i></i>指名スタッフ</dt>
+                            <dd>
+                                <select name="product">
+                                    <option value="">選択してください</option>
+                                    <option value="なし">なし</option>
+                                    <option value="リース・ホワイト">リース・ホワイト</option>
+                                    <option value="チャーリー・マクマン">チャーリー・マクマン</option>
+                                    <option value="リバー・ワッツ">リバー・ワッツ</option>
+                                </select>
+                            </dd>
+                        </dl>
+                                                
+                        <dl>
+                            <dt><i></i>返信方法のご希望</dt>
+                            <dd>
+                                <ul>
+                                    <li><label><input type="checkbox" name="response[]" value="電話での返信を希望" />電話での返信を希望</label></li>
+                                    <li><label><input type="checkbox" name="response[]" value="メールでの返信を希望" />メールでの返信を希望</label></li>
+                                    <li><label><input type="checkbox" name="response[]" value="返信不要" />返信不要</label></li>
+                                </ul>
+                            </dd>
+                        </dl>
+                        
+                        <dl>
+                            <dt><i></i>サロンへのメッセージ</dt>
+                            <dd><textarea name="contents" cols="40" rows="5"></textarea></dd>
+                        </dl>
+                        
+                        <p id="form_submit"><input type="button" id="form_submit_button" value="送信する" /></p>
+                        
+                    </form>
+                </section>
+            </article>
+            <footer>
+                <p>salon takahashi</p>
+            </footer>
+        </div>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/mailform-js.php"></script>
+
+
+
+
+    <!-- フリガナ自動入力ライブラリここから -->
+    <script src="js/jquery.autoKana.js"></script>
+    <script>
+        (function( $ ) {
+            $.fn.autoKana( 'input[name="name_1"]', 'input[name="read_1"]', {
+                katakana: false
+            });
+            $.fn.autoKana( 'input[name="name_2"]', 'input[name="read_2"]', {
+                katakana: false
+            });
+        })( jQuery );
+    </script>
+    <!-- フリガナ自動入力ライブラリここまで -->
+
+
+
+
+    <!-- 住所自動入力ライブラリここから -->
+    <script src="js/ajaxzip3.js"></script>
+    <!-- 住所自動入力ライブラリここまで -->
+
+
+
+
+    <!-- ご希望の日時選択ライブラリここから -->
+    <script src="js/jquery.datetimepicker.js"></script>
+    <script>
+        (function( $ ) {
+            $( 'input[name="schedule"]' ).datetimepicker({
+                lang: 'ja'
+            });
+        })( jQuery );
+    </script>
+    <!-- ご希望の日時選択ライブラリここまで -->
+</body>
+</html>

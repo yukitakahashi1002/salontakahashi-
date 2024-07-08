@@ -1,0 +1,66 @@
+/* PC、スマホ共通スタイル */
+body {
+    font-family: 'Didact Gothic', sans-serif;
+}
+
+p {
+    font-size: 15px;
+}
+
+/*============= 
+PC用のスタイル 
+==============*/
+/* 横幅設定 */
+body {
+
+    min-width: 960px;
+    margin: 0 auto 0 auto;
+}
+
+/* ヘッダー */
+header {
+    text-align: center;
+    margin-top: 50px;
+}
+header > h1 {
+    margin-left: 20px;
+    font-weight: normal;
+}
+
+/* ナビゲーションのレイアウト */
+#nav-pc > a:link {
+    text-decoration: none;
+    margin-left: 20px;
+    color: #0d0d0d;
+}
+
+#nav-pc > a:visited {
+    color: #0d0d0d;   
+}
+
+#nav-pc > a:hover {
+    color: #0d0d0d;
+    text-decoration: underline;
+}
+
+#nav-pc > a:active {
+    color: #0d0d0d;
+}
+
+/* メインビジュアル */
+#main-visual {
+    text-align: center;
+}
+
+#main-message > h1 {
+    font-size: 60px;
+    margin: 100px auto 0 auto;
+    font-weight: normal;
+}
+#main-message > p {
+    font-size: 20px;
+}
+
+#main-visual > img {
+    margin: 50px 100px 0 auto;
+}

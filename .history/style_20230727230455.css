@@ -1,0 +1,23 @@
+/* PC、スマホ共通スタイル */
+body {
+    font-family: 'Didact Gothic', sans-serif;
+}
+
+p {
+    font-size: 15px;
+}
+
+/*============= 
+PC用のスタイル 
+==============*/
+/* 横幅設定 */
+body {
+    max-width: 1080px;
+    min-width: 960px;
+    margin: 0 auto 0 auto;
+}
+
+/* ヘッダー */
+header {
+    text-align: center;
+}

@@ -1,0 +1,170 @@
+/* PC、スマホ共通スタイル */
+body {
+    font-family: 'Didact Gothic', sans-serif;
+    background-color: #FFFFF8;
+}
+
+p {
+    font-size: 15px;
+}
+
+/*============= 
+PC用のスタイル 
+==============*/
+/* 横幅設定 */
+body {
+    max-width: 1800px;
+    min-width: 960px;
+    margin: 0 auto 0 auto;
+}
+
+/* ヘッダー */
+header {
+    text-align: center;
+    margin-top: 50px;
+}
+header > h1 {
+    margin-left: 20px;
+    font-weight: normal;
+}
+
+/* ナビゲーションのレイアウト */
+#nav-pc > a:link {
+    text-decoration: none;
+    margin-left: 20px;
+    color: #0d0d0d;
+}
+
+#nav-pc > a:visited {
+    color: #0d0d0d;   
+}
+
+#nav-pc > a:hover {
+    color: #0d0d0d;
+    text-decoration: underline;
+}
+
+#nav-pc > a:active {
+    color: #0d0d0d;
+}
+
+/* メインビジュアル */
+#main-visual {
+    text-align: center;
+}
+
+#main-message > h1 {
+    font-size: 60px;
+    margin: 100px auto 0 auto;
+    font-weight: normal;
+}
+#main-message > p {
+    font-size: 20px;
+}
+
+#main-visual > img {
+    margin: 80px auto 0 auto;
+}
+
+/* 見出し */
+.section-title {
+    text-align: center;
+}
+.section-title > P {
+    margin-top: -20px;
+}
+
+
+h2 {
+    font-weight: normal;
+    font-size: 27px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+/* メニュー */
+#menu {
+    margin: 100px auto 80px auto;
+    width: 100%;
+}
+
+#menu-flex {
+    width: 100%;
+    display: flex;
+}
+
+#menu-flex > div {
+    width: 50%;
+    height: 600px;
+    margin: 50px 20px 20px 20px;
+}
+
+.menu-flex-left {
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+}
+
+.menu-flex-left > img {
+    width: 100%;
+}
+
+.menu-flex-left > div {
+    width: 30%;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0;
+    background-color: #666666;
+    opacity: 0.5;
+    color: #FFFFFF;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+.menu-flex-right {
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+}
+
+
+.menu-flex-right > img {
+    width: 100%;
+}
+
+.menu-flex-right > div {
+    width: 30%;
+    position: absolute;
+    bottom: 10%;
+    right: 20%;
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0;
+    background-color: #666666;
+    opacity: 0.5;
+    color: #FFFFFF;
+    text-align: center;
+    font-weight: bold;
+ }
+
+.menu-foot {
+    text-align: left;
+    width: 60%;
+    margin: 0 0 0 30%;
+} 
+
+.menu-foot p {
+    font-weight: bold;margin: 5px 0 5px 0;
+    font-size: 20px;
+}
+
